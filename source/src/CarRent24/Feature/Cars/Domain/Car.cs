@@ -1,6 +1,6 @@
-using CarRent24.Domain.Common;
+using CarRent24.Common;
 
-namespace CarRent24.Domain.Cars
+namespace CarRent24.Feature.Cars.Domain
 {
     public class Car : Entity, IAggregateRoot
     {

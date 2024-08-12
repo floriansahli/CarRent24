@@ -1,4 +1,4 @@
-namespace CarRent24.Domain.Common
+namespace CarRent24.Common
 {
     public abstract class ValueObject : IEquatable<ValueObject?>
     {
@@ -12,7 +12,7 @@ namespace CarRent24.Domain.Common
         public override int GetHashCode()
         {
             HashCode hashcode = default;
-            foreach(var obj in EqualityComponents)
+            foreach (var obj in EqualityComponents)
             {
                 hashcode.Add(obj);
             }
@@ -21,12 +21,12 @@ namespace CarRent24.Domain.Common
 
         public bool Equals(ValueObject? other)
         {
-            if(other == null)
+            if (other == null)
             {
                 return false;
             }
 
-            if(other.GetType() != this.GetType())
+            if (other.GetType() != GetType())
             {
                 return false;
             }

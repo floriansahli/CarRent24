@@ -1,4 +1,4 @@
-﻿namespace CarRent24.Domain.Common
+﻿namespace CarRent24.Common
 {
     public interface IAggregateRoot
     {
