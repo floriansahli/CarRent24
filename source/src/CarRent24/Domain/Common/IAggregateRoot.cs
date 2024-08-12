@@ -2,5 +2,6 @@
 {
     public interface IAggregateRoot
     {
+        public IReadOnlyList<IDomainEvent> DomainEvents { get; }
     }
 }

@@ -3,10 +3,19 @@ namespace CarRent24.Domain.Common
 {
     public class Entity : IEquatable<Entity?>
     {
-        protected Entity() { 
+        private readonly List<IDomainEvent> _domainEvents = [];
+        protected Entity()
+        {
             Id = Guid.NewGuid();
         }
         public Guid Id { get; private set; }
+        public IReadOnlyList<IDomainEvent> DomainEvents => _domainEvents;
+
+        protected void AddDomainEvent(IDomainEvent domainEvent)
+        {
+            _domainEvents.Add(domainEvent);
+        }
+
 
         public override bool Equals(object? obj)
         {
