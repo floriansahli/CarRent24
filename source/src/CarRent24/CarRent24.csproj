@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
@@ -15,6 +17,7 @@
     <Folder Include="Feature\Cars\API\" />
     <Folder Include="Feature\Cars\Infrastructure\" />
     <Folder Include="Feature\Cars\Application\" />
+    <Folder Include="Persistence\" />
   </ItemGroup>
 
 </Project>
