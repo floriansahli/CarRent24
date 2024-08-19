@@ -4,7 +4,7 @@ namespace CarRent24.Feature.Cars.Domain
 {
     public class Car : Entity, IAggregateRoot
     {
-        public string Name { get; private set; }
+        public string Name { get; internal set; }
 
     }
 }

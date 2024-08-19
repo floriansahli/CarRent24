@@ -22,6 +22,11 @@ namespace CarRent24.Feature.Cars.Infrastructure
             return this._context.Set<Car>().Find([id]);
         }
 
+        public IReadOnlyList<Car> GetCars()
+        {
+            return this._context.Set<Car>().ToList();
+        }
+
         public void Remove(Car entity)
         {
             this._context.Set<Car>().Remove(entity);
