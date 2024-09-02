@@ -17,6 +17,7 @@
   <ItemGroup>
     <Folder Include="Feature\Cars\Infrastructure\" />
     <Folder Include="Feature\Cars\Application\" />
+    <Folder Include="Feature\Reservations\API\" />
     <Folder Include="Persistence\" />
   </ItemGroup>
 

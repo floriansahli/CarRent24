@@ -36,7 +36,7 @@ namespace CarRent24.Feature.Cars.API
             await SendCreatedAtAsync<GetCarByIdEndpoint>(car.Id, new CarResponse
             {
                 Id = car.Id,
-                Name = car.Name
+                Name = car.LicensePlate
 
             });
         }

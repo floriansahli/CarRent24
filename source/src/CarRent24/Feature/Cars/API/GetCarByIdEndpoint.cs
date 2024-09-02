@@ -24,7 +24,7 @@ namespace CarRent24.Feature.Cars.API
             await SendAsync(new CarResponse
             {
                 Id = car.Id,
-                Name=car.Name
+                Name=car.LicensePlate
             }, StatusCodes.Status200OK, ct);
         }
     }

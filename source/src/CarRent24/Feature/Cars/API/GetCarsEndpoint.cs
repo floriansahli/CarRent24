@@ -22,7 +22,7 @@ namespace CarRent24.Feature.Cars.API
             var reponse = cars.Select(Car => new CarResponse
             {
                 Id = Car.Id,
-                Name = Car.Name,
+                Name = Car.LicensePlate,
             });
             await SendOkAsync(reponse, ct);
         }
